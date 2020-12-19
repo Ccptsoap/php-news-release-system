@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="renderer" content="webkit">
+    <title></title>
+    <link rel="stylesheet" href="css/pintuer.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/pintuer.js"></script>
+
+
+    <script>
+
+        function ajup(str) {
+            if (window.XMLHttpRequest) {
+                // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+                xmlhttp = new XMLHttpRequest();
+            } else {
+                // IE6, IE5 浏览器执行代码
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                // alert('response '+xmlhttp.readyState+' '+xmlhttp.status);
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    // alert(xmlhttp.responseText);
+                    document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET", str, true);
+            xmlhttp.send();
+        }
+
+
+        function ajup6() {
+            $.get("del_allre.php", function (data, status) {
+                document.getElementById("txtHint").innerHTML = data;
+            });
+        }
+
+
+        $(function () {
+            ajup("get_recycle.php");
+        });
+
+    </script>
+
+
+</head>
+
+
+<body>
+    <div class="panel admin-panel">
+        <div class="panel-head"><strong class="icon-reorder"> 新闻回收站</strong></div>
+        <h2 align="center" style="padding: 10px;">网站管理员可恢复误删新闻 &nbsp; <a class="button border-red fadein-bottom"
+                                                                         href="javascript:void(0)"
+                                                                         onclick="ajup6()"><span
+                class="icon-rocket"></span> 清空回收站</a>
+        </h2>
+
+        <div id="txtHint"><h2 align="center" style="padding: 20px">加载中...</h2></div>
+
+
+    </div>
+    <script type="text/javascript">
+        function reuse(id) {
+            if (confirm("您确定要恢复吗?")) {
+                if (window.XMLHttpRequest) {
+                    // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+                    xmlhttp = new XMLHttpRequest();
+                } else {
+                    // IE6, IE5 浏览器执行代码
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function () {
+                    // alert('response '+xmlhttp.readyState+' '+xmlhttp.status);
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        // alert(xmlhttp.responseText);
+                        document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+                    }
+                }
+                //把 recycle的数据为uid的插入user
+                xmlhttp.open("GET", "reuse_data.php?uid=" + id, true);
+                xmlhttp.send();
+            }
+        }
+    </script>
+
+
+</body>
+</html>

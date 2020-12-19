@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eaeecf65-0d07-42b7-82da-796b25ff828d" name="Default" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="cb8dcd96-18cb-4f13-b714-e96d69a86dbe" name="localhost" use_path_mappings="true" />
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1lsDIEIDAQsTlbCVFDWeRkf72vB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\69465\Desktop\news\front\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\www\news\front\images" />
+      <recent name="E:\www\news\front" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="news.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/news.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="数据库脚本.news.sql" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eaeecf65-0d07-42b7-82da-796b25ff828d" name="Default" comment="" />
+      <created>1514827778657</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1514827778657</updated>
+      <workItem from="1514827780021" duration="972000" />
+      <workItem from="1514858560656" duration="31381000" />
+      <workItem from="1514942013560" duration="8112000" />
+      <workItem from="1514957081582" duration="345000" />
+      <workItem from="1514957851789" duration="33316000" />
+      <workItem from="1515034405793" duration="24430000" />
+      <workItem from="1515200487640" duration="23793000" />
+      <workItem from="1515255070957" duration="4789000" />
+      <workItem from="1515290493269" duration="2176000" />
+      <workItem from="1515293534635" duration="431000" />
+      <workItem from="1608376823678" duration="12061000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="790" y="198" key="#PHP" timestamp="1608376939312">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="790" y="198" key="#PHP/0.0.2048.1112@0.0.2048.1112" timestamp="1608376939312" />
+    <state x="606" y="398" key="#SQL_方言" timestamp="1608376856945">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="606" y="398" key="#SQL_方言/0.0.2048.1112@0.0.2048.1112" timestamp="1608376856945" />
+    <state x="617" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608376893614">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1608376893614" />
+    <state x="448" y="335" key="FileChooserDialogImpl" timestamp="1608393174396">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="448" y="335" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1608393174396" />
+    <state width="1713" height="171" key="GridCell.Tab.0.bottom" timestamp="1608381219948">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1713" height="171" key="GridCell.Tab.0.bottom/0.0.2048.1112@0.0.2048.1112" timestamp="1608381219948" />
+    <state width="1713" height="171" key="GridCell.Tab.0.center" timestamp="1608381219948">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1713" height="171" key="GridCell.Tab.0.center/0.0.2048.1112@0.0.2048.1112" timestamp="1608381219948" />
+    <state width="1713" height="171" key="GridCell.Tab.0.left" timestamp="1608381219948">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1713" height="171" key="GridCell.Tab.0.left/0.0.2048.1112@0.0.2048.1112" timestamp="1608381219948" />
+    <state width="1713" height="171" key="GridCell.Tab.0.right" timestamp="1608381219948">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="1713" height="171" key="GridCell.Tab.0.right/0.0.2048.1112@0.0.2048.1112" timestamp="1608381219948" />
+    <state x="526" y="201" key="SettingsEditor" timestamp="1608387440121">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="526" y="201" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1608387440121" />
+    <state x="968" y="182" width="1817" height="899" key="dock-window-1" timestamp="1608388522973">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="968" y="182" width="1817" height="899" key="dock-window-1/0.0.2048.1112@0.0.2048.1112" timestamp="1608388522973" />
+    <state x="245" y="164" width="1817" height="899" key="dock-window-2" timestamp="1608388522973">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="245" y="164" width="1817" height="899" key="dock-window-2/0.0.2048.1112@0.0.2048.1112" timestamp="1608388522973" />
+    <state x="402" y="231" width="1017" height="763" key="find.popup" timestamp="1608389856060">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="402" y="231" width="1017" height="763" key="find.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1608389856060" />
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1608378310021">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1608378310021" />
+  </component>
+</project>
