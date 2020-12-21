@@ -39,7 +39,7 @@
       }
 
       $(function(){
-          ajup("get_newslist.php");
+          ajup("getNewslist.php");
       });
 
   </script>
@@ -79,7 +79,7 @@
                     document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
                 }
             }
-            xmlhttp.open("GET", "del_newslist.php?uid="+id,true);
+            xmlhttp.open("GET", "delNewslist.php?uid="+id,true);
             xmlhttp.send();
         }
     }

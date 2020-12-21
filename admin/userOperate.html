@@ -33,7 +33,7 @@
         }
 
         $(function () {
-            ajup("get_user.php");
+            ajup("getUser.php");
         });
     </script>
 </head>
@@ -65,7 +65,7 @@
                         document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
                     }
                 }
-                xmlhttp.open("GET", "del_user.php?uid=" + id, true);
+                xmlhttp.open("GET", "delUser.php?uid=" + id, true);
                 xmlhttp.send();
             }
         }

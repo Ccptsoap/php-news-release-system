@@ -1,8 +1,11 @@
 <?php
+    if ($_SERVER['HTTP_REFERER'] == "") {
+        header("Location:" . "index.php");
+        exit;
+    }
+    require_once($_SERVER['DOCUMENT_ROOT'] . "/mysqli_connect.php");
 
-    require "mysqli_connect.php";
-
-    $sql = "SELECT news_id,title,cre_date FROM recycle ORDER BY  cre_date DESC";
+    $sql = "SELECT news_id,title,cre_date FROM news ORDER BY  cre_date DESC";
 //执行查询，返回结果集对象
     $mysqli_reseult = $mysqli->query($sql);
 //如果结果集存在并且有数据
@@ -22,11 +25,11 @@
             echo '<td>' . $row['news_id'] . '</td><td>' . $row['title'] . '</td><td>' . $row['cre_date'] . '</td>';
             echo '<td>
         <div class="button-group">
-          <a class="button border-main" href="javascript:void(0)" onclick="';
+          <a class="button border-red" href="javascript:void(0)" onclick="';
 
-            echo "return reuse({$row['news_id']})";
+            echo "return del({$row['news_id']},2)";
 
-            echo '"><span class="icon-paper-plane"></span> 恢复</a>
+            echo '"><span class="icon-trash-o"></span> 删除</a>
         </div>
       </td>';
             echo '</tr>';
@@ -34,7 +37,12 @@
         echo "</table>";
 
     } else {
-        echo '<h3 align="center" style="padding: 20px">回收站空空如也哦</h3>';
+        echo '么有你想要的东西';
     }
     $mysqli->close();
+
+
+
+
+
 

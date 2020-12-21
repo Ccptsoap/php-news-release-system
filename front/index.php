@@ -57,13 +57,13 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="index.php"><span class="icon-home"></span> 首页</a></li>
                                 <li><a href="search.php"><span class="icon-search"></span> 搜索</a></li>
-                                <li><a data-cont="管理员" title="管理员" href="../admin/login.html"><span
+                                <li><a href="../admin/login.html"><span
                                                 class="icon-wrench"></span> 管理员</a></li>
                                 <?php
                                     session_start();
                                     if (!isset($_SESSION['fname'])) {
                                         ?>
-                                        <li><a data-cont="用户登陆" title="用户登陆" href="../user/login.html"><span
+                                        <li><a href="../user/login.html"><span
                                                         class="icon-user"></span> 用户登陆</a></li>
                                         <?php
                                     } else { ?>

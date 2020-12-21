@@ -1,5 +1,5 @@
 <?php
-    require 'mysqli_connect.php';
+    require_once($_SERVER['DOCUMENT_ROOT'] . "/mysqli_connect.php");
 
     $title = $_POST['title'];
     $content = $_POST['content'];

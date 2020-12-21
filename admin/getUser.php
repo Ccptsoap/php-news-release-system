@@ -1,7 +1,9 @@
 <?php
-
-
-    require "mysqli_connect.php";
+    if ($_SERVER['HTTP_REFERER'] == "") {
+        header("Location:" . "index.php");
+        exit;
+    }
+    require_once($_SERVER['DOCUMENT_ROOT'] . "/mysqli_connect.php");
 
     $sql = "SELECT user_id,username,email FROM user";
 //执行查询，返回结果集对象

@@ -1,5 +1,9 @@
 <?php
-    require 'mysqli_connect.php';
+    if ($_SERVER['HTTP_REFERER'] == "") {
+        header("Location:" . "index.php");
+        exit;
+    }
+    require_once($_SERVER['DOCUMENT_ROOT'] . "/mysqli_connect.php");
 
 //插入回收站
     $sql = "SELECT * FROM recycle WHERE news_id=" . $_GET['uid'];

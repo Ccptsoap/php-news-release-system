@@ -12,8 +12,6 @@
     <link rel="stylesheet" type="text/css" href="css/nprogress.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="apple-touch-icon-precomposed" href="images/icon.png">
-    <link rel="shortcut icon" href="images/favicon.ico">
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/nprogress.js"></script>
     <script src="js/jquery.lazyload.min.js"></script>
@@ -25,18 +23,14 @@
     <script src="../admin/js/jquery.js"></script>
 
     <script>
-        function ajup5() {
-            // alert("ajup5 + ");
+        function logout() {
             $.get("logout.php", function (data, status) {
-                // alert("数据: " + data + "\n状态: " + status);
             });
             location.replace(location);
         }
 
-        function comlist() {
-            // alert("comlist");
+        function getComlist() {
             $.get(" getComment.php?new_nid=" +<?php echo "{$_GET['id']}"; ?>, function (data, status) {
-                // alert("数据: " + data + "\n状态: " + status);
                 document.getElementById("txtHint_com").innerHTML = data;
             });
         }
@@ -57,7 +51,8 @@
         <nav class="navbar navbar-default" id="navbar">
             <div class="container">
                 <div class="navbar-header">
-                    <h1 class="logo hvr-bounce-in"><a href="index.php"><strong>昨日头条</strong></a></h1>
+                    <h1 class="logo hvr-bounce-in" style="text-align: center;"><a href="index.php"><strong>昨日头条</strong>
+                    </h1></a></h1>
                 </div>
                 <div class="collapse navbar-collapse" id="header-navbar">
                     <form class="navbar-form visible-xs" action="/Search" method="post">
@@ -80,7 +75,7 @@
                                                 class="icon-user"></span> 用户登陆</a></li>
                                 <?php
                             } else { ?>
-                                <li><a href="javascript:void(0)" onclick="ajup5()"><span class="icon-sign-out"></span>
+                                <li><a href="javascript:void(0)" onclick="logout()"><span class="icon-sign-out"></span>
                                         退出登陆</a></li>
                                 <?php
                             }
@@ -102,8 +97,7 @@
                 <?php
                     $news_id = $_GET['id'];
 
-                    $mysqli = new mysqli('127.0.0.1', 'root', '888888', 'news');
-                    $mysqli->set_charset('utf8');
+                    require_once($_SERVER['DOCUMENT_ROOT'] . "/mysqli_connect.php");
                     if ($mysqli->connect_errno) {
                         die('<h2 style="color : red">连接错误</h2>' . $mysqli->connect_error);
                     }
@@ -140,19 +134,17 @@
                             echo "</p><p>";
                         }
 
-
                         echo "</p>
         </article>
         
       <div class=\"article-tags\">
-          分类：{$row['category']}
+          类型：{$row['category']}
       </div>
     ";
 
                     } else {
                         echo '<h1 class=\"article-title\" style="text-align: center;padding-top: 50px;padding-bottom: 50px">没有找到该文章！</h1>';
                     }
-
                     //更新阅读量
                     $sql = "UPDATE news SET click=click+1 WHERE news_id=" . $news_id;
                     //执行查询，返回结果集对象
@@ -161,7 +153,6 @@
                     $mysqli->close();
 
                 ?>
-
                 <hr>
                 <br>
 
@@ -196,7 +187,8 @@
                 ?>
                 <div style="text-align:center">
                     <button class="button border-green icon-chevron-circle-down"
-                            style="width: 400px; padding-top: 5px;padding-bottom: 5px;margin-top: 20px;" onclick="comlist()"> 点击加载评论
+                            style="width: 400px; padding-top: 5px;padding-bottom: 5px;margin-top: 20px;"
+                            onclick="getComlist()"> 点击加载评论
                     </button>
                 </div>
 

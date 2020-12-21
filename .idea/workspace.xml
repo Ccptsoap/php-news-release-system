@@ -1,60 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaeecf65-0d07-42b7-82da-796b25ff828d" name="Default" comment="初始版本，准备将腾讯新闻的列表加入。">
-      <change afterPath="$PROJECT_DIR$/admin/newsCreate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/getNewsByKeyword.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsCoverImg/newPicTest.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsCoverImg/国内1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsCoverImg/国内2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsCoverImg/国内3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsCoverImg/国际1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsCoverImg/经济1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/newsCoverImg/经济2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/12c65ca8-bb88-4c83-a5b9-209df0438211.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/12c65ca8-bb88-4c83-a5b9-209df0438211.xml" afterDir="false" />
+    <list default="true" id="eaeecf65-0d07-42b7-82da-796b25ff828d" name="Default" comment="前端改为了腾讯新闻的界面，加入了封面图片。&#10;修改了部分文件名。&#10;重新设计了数据库数据。">
+      <change afterPath="$PROJECT_DIR$/conf.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/cate.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/userOperate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/css/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/del_allre.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/del_allre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/get_recycle.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/get_recycle.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/info.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/book.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/book.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/del_allre.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/delAllre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/del_newslist.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/delNewslist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/del_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/delUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/get_newslist.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/getNewslist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/get_recycle.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/getRecycle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/get_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/getUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/is_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/is_login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/mysqli_connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/mysqli_connect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/newsCreate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/pass.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/rootOperate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/mysqli_connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/mysqli_connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/newsCreate.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/newsCreate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/newsCreate.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/newsCreate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/recycle.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/recycle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/reuse_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/reuse_data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/userOperate.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/userOperate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/b4_js/bootstrap.min.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front/getComment.php" beforeDir="false" afterPath="$PROJECT_DIR$/front/getComment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/getNewsByCate.php" beforeDir="false" afterPath="$PROJECT_DIR$/front/getNewsByCate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/getNewsByKeyword.php" beforeDir="false" afterPath="$PROJECT_DIR$/front/getNewsByKeyword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/getNewsByPoint.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/getNewsByTime.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/images/cate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/images/corpor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/images/nav_head.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/images/new_news.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/images/point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/images/search.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/front/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/postComment.php" beforeDir="false" afterPath="$PROJECT_DIR$/front/postComment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/front/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/show.php" beforeDir="false" afterPath="$PROJECT_DIR$/front/showNews.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/user/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/images/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/user/images/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/images/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/user/images/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/images/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/user/images/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/images/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/user/images/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/images/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/user/images/Thumbs.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/user/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/user/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/user/js/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/js/jquery.validate.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/user/js/jquery.validate.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/js/supersized-init.js" beforeDir="false" afterPath="$PROJECT_DIR$/user/js/supersized-init.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/js/supersized.3.2.7.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/user/js/supersized.3.2.7.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.sql" beforeDir="false" afterPath="$PROJECT_DIR$/news.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/tecentNews.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/tecentNews.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/showNews.php" beforeDir="false" afterPath="$PROJECT_DIR$/front/showNews.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tecentNews.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/user/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/images/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/images/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/images/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/images/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,11 +108,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.gitee.ui.GiteeSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\69465\Desktop\news" />
       <recent name="C:\Users\69465\Desktop\news\front\css" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -140,7 +155,7 @@
       <workItem from="1515255070957" duration="4789000" />
       <workItem from="1515290493269" duration="2176000" />
       <workItem from="1515293534635" duration="431000" />
-      <workItem from="1608376823678" duration="38684000" />
+      <workItem from="1608376823678" duration="46788000" />
     </task>
     <task id="LOCAL-00001" summary="初始版本，准备将腾讯新闻的列表加入。">
       <created>1608393310702</created>
@@ -149,19 +164,60 @@
       <option name="project" value="LOCAL" />
       <updated>1608393310702</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="前端改为了腾讯新闻的界面，加入了封面图片。&#10;修改了部分文件名。&#10;重新设计了数据库数据。">
+      <created>1608535331475</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608535331475</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="初始版本，准备将腾讯新闻的列表加入。" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始版本，准备将腾讯新闻的列表加入。" />
+    <MESSAGE value="前端改为了腾讯新闻的界面，加入了封面图片。&#10;修改了部分文件名。&#10;重新设计了数据库数据。" />
+    <option name="LAST_COMMIT_MESSAGE" value="前端改为了腾讯新闻的界面，加入了封面图片。&#10;修改了部分文件名。&#10;重新设计了数据库数据。" />
   </component>
   <component name="WindowStateProjectService">
     <state x="790" y="198" key="#PHP" timestamp="1608376939312">
@@ -180,6 +236,14 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="617" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1608376893614" />
+    <state x="651" y="235" key="#检查" timestamp="1608572420028">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="651" y="235" key="#检查/0.0.2048.1112@0.0.2048.1112" timestamp="1608572420028" />
+    <state x="93" y="93" width="1862" height="926" key="DiffContextDialog" timestamp="1608548548883">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="93" y="93" width="1862" height="926" key="DiffContextDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1608548548883" />
     <state x="448" y="335" key="FileChooserDialogImpl" timestamp="1608393174396">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -204,10 +268,14 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="248" height="477" key="HiddenNamespacesPopup/0.0.2048.1112@0.0.2048.1112" timestamp="1608406340921" />
-    <state x="526" y="201" key="SettingsEditor" timestamp="1608387440121">
+    <state x="526" y="201" key="SettingsEditor" timestamp="1608548548540">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="526" y="201" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1608387440121" />
+    <state x="526" y="201" key="SettingsEditor/0.0.2048.1112@0.0.2048.1112" timestamp="1608548548540" />
+    <state x="412" y="226" key="Vcs.Push.Dialog.v2" timestamp="1608548905372">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="412" y="226" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1608548905372" />
     <state x="919" y="443" width="334" height="248" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1608533103356">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -220,6 +288,10 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="419" y="354" width="1174" height="722" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.2048.1112@0.0.2048.1112" timestamp="1608409625509" />
+    <state x="838" y="469" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608548803810">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="838" y="469" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2048.1112@0.0.2048.1112" timestamp="1608548803810" />
     <state x="968" y="182" width="1817" height="899" key="dock-window-1" timestamp="1608388522973">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -228,17 +300,17 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="245" y="164" width="1817" height="899" key="dock-window-2/0.0.2048.1112@0.0.2048.1112" timestamp="1608388522973" />
-    <state x="402" y="231" width="1017" height="763" key="find.popup" timestamp="1608534693137">
+    <state x="607" y="243" width="1017" height="763" key="find.popup" timestamp="1608572597032">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="402" y="231" width="1017" height="763" key="find.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1608534693137" />
+    <state x="607" y="243" width="1017" height="763" key="find.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1608572597032" />
     <state x="681" y="259" key="run.anything.popup" timestamp="1608405134746">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="681" y="259" key="run.anything.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1608405134746" />
-    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1608404479992">
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1608569054031">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1608404479992" />
+    <state x="687" y="243" width="672" height="678" key="search.everywhere.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1608569054031" />
   </component>
 </project>

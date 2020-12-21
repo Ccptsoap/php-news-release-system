@@ -1,11 +1,13 @@
 <?php
     //获取指定类型的新闻
 
+    if ($_SERVER['HTTP_REFERER'] == "") {
+        header("Location:" . "index.php");
+        exit;
+    }
     header("Content-Type: text/html; charset=utf-8");
 
-    $mysqli = new mysqli('127.0.0.1', 'root', '888888', 'news');
-    $mysqli->set_charset('utf8');
-
+    require_once($_SERVER['DOCUMENT_ROOT'] . "/mysqli_connect.php");
     if ($mysqli->connect_errno) {
         die('<h2 style="color: red">连接错误</h2>' . $mysqli->connect_error);
     }
