@@ -2,16 +2,15 @@
 <html lang="zh-cn">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <meta name="renderer" content="webkit">
     <title></title>
     <link rel="stylesheet" href="css/pintuer.css">
     <link rel="stylesheet" href="css/admin.css">
     <script src="js/jquery.js"></script>
     <script src="js/pintuer.js"></script>
-
 
     <script>
         function ajup(str) {
@@ -22,7 +21,7 @@
                 // IE6, IE5 浏览器执行代码
                 xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
             }
-            xmlhttp.onreadystatechange = function() {
+            xmlhttp.onreadystatechange = function () {
                 // alert('response '+xmlhttp.readyState+' '+xmlhttp.status);
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                     // alert(xmlhttp.responseText);
@@ -33,24 +32,20 @@
             xmlhttp.send();
         }
 
-        $(function() {
+        $(function () {
             ajup("get_user.php");
         });
     </script>
-
-
 </head>
-
 
 <body>
     <div class="panel admin-panel">
         <div class="panel-head"><strong class="icon-reorder"> 用户管理</strong></div>
-        <h2 text-align="center" style="padding: 10px;">网站管理员可删除非法用户</h2>
+        <h2 align="center" style="padding: 10px;">网站管理员可删除非法用户</h2>
 
         <div id="txtHint">
             <h2 text-align="center" style="padding: 20px">加载中...</h2>
         </div>
-
 
     </div>
     <script type="text/javascript">
@@ -63,7 +58,7 @@
                     // IE6, IE5 浏览器执行代码
                     xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
                 }
-                xmlhttp.onreadystatechange = function() {
+                xmlhttp.onreadystatechange = function () {
                     // alert('response '+xmlhttp.readyState+' '+xmlhttp.status);
                     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                         // alert(xmlhttp.responseText);
@@ -76,8 +71,5 @@
         }
     </script>
 
-
-
 </body>
-
 </html>

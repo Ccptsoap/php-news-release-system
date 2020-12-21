@@ -17,7 +17,7 @@
     <div class="panel admin-panel">
         <div class="panel-head"><strong><span class="icon-pencil-square-o"></span> 发布新闻</strong></div>
         <div class="body-content">
-            <form method="post" class="form-x" action="page.php">
+            <form method="post" class="form-x" action="newsCreate.php" enctype="multipart/form-data">
                 <div class="form-group">
                     <div class="label">
                         <label>标题：</label>
@@ -29,20 +29,17 @@
                 </div>
 
 
-                <!--类型-->
                 <div class="form-group">
                     <div class="label">
                         <label>类型：</label>
                     </div>
                     <div class="field" style="margin-top: 8px;">
-                        <label><input type="radio" class="radio" name="category" checked value="国际新闻">国际新闻</label>
+                        <label><input type="radio" class="radio" name="category" checked value="国内新闻">国内新闻</label>
                         &nbsp;&nbsp;
-                        <label><input type="radio" class="radio" name="category" value="军事新闻">军事新闻</label> &nbsp;&nbsp;
+                        <label><input type="radio" class="radio" name="category" value="国际新闻">国际新闻</label> &nbsp;&nbsp;
                         <label><input type="radio" class="radio" name="category" value="体育新闻">体育新闻</label> &nbsp;&nbsp;
                         <label><input type="radio" class="radio" name="category" value="娱乐新闻">娱乐新闻</label> &nbsp;&nbsp;
-                        <label><input type="radio" class="radio" name="category" value="社会新闻">社会新闻</label> &nbsp;&nbsp;
                         <label><input type="radio" class="radio" name="category" value="经济新闻">经济新闻</label> &nbsp;&nbsp;
-                        <label><input type="radio" class="radio" name="category" value="时政新闻">时政新闻</label> &nbsp;&nbsp;
                         <div class="tips"></div>
                     </div>
                 </div>
@@ -54,6 +51,16 @@
                     </div>
                     <div class="field">
                         <textarea name="content" data-validate="required:请填写内容"></textarea>
+                        <div class="tips"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label">
+                        <label>封面：</label>
+                    </div>
+                    <div class="field">
+                        <input class="button" type="file" name="coverImg" id="coverImg"/>
                         <div class="tips"></div>
                     </div>
                 </div>

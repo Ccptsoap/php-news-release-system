@@ -13,11 +13,11 @@
     <link rel="stylesheet" type="text/css" href="css/nprogress.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="apple-touch-icon-precomposed" href="images/icon.png">
-    <link rel="shortcut icon" href="images/favicon.ico">
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/nprogress.js"></script>
     <script src="js/jquery.lazyload.min.js"></script>
+
+    <link href="css/newsStyle.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../admin/css/pintuer.css">
     <script src="../admin/js/pintuer.js"></script>
@@ -28,12 +28,12 @@
 
 <body class="user-select">
 
-    <header class="header" style="background:url(images/favicon.ico)">
+    <header class="header">
         <nav class="navbar navbar-default" id="navbar">
             <div class="container">
                 <div class="navbar-header">
-                    <h1 class="logo hvr-bounce-in" style="text-align: center;font-family:'宋体'"><a
-                                href="index.php"><strong>新闻发布系统</strong></h1></a></h1>
+                    <h1 class="logo hvr-bounce-in" style="text-align: center;"><a
+                                href="index.php"><strong>今日头条</strong></h1></a></h1>
                 </div>
                 <div class="collapse navbar-collapse" id="header-navbar">
                     <form class="navbar-form visible-xs" action="/Search" method="post">
@@ -55,7 +55,7 @@
                             session_start();
                             if (!isset($_SESSION['fname'])) {
                                 ?>
-                                <li><a data-cont="用户登陆" title="用户登陆" href="../home/login.html"><span
+                                <li><a data-cont="用户登陆" title="用户登陆" href="../user/login.html"><span
                                                 class="icon-user"></span> 用户登陆</a></li>
                                 <?php
                             } else { ?>
@@ -76,7 +76,7 @@
         function ajup() {
             var str = document.getElementById("key").value;
             // alert("ajup + "+str);
-            $.get(" .php?key=" + str, function (data, status) {
+            $.get("getNewsByKeyword.php?key=" + str, function (data, status) {
                 // alert("数据: " + data + "\n状态: " + status);
                 document.getElementById("answer").innerHTML = data;
             });
@@ -84,7 +84,7 @@
         }
 
         function turn(id) {
-            var s = "show.php?id=" + id;
+            var s = "showNews.php?id=" + id;
             window.location.href = s;
         }
 
@@ -94,28 +94,25 @@
     </script>
 
     <section class="container">
-
-        <p align="center" class="jumbotron">
-
-        </p>
-        <div class="jumbotron line" style="margin-bottom:20px; text-align:center">
-            <h1 style="text-align: center;font-family:'宋体'"><span class="icon-search"></span> 新闻搜索</h1>
+        <div class="dt-wrap">
+            <div class="jumbotron line"
+                 style="margin-bottom:80px; padding-top: 10px; text-align:center;background-color:#EEEEEE">
+                <h1 style="text-align: center; color: #337ab7;font-weight:900"></span>新闻搜索</h1>
+            </div>
         </div>
-        <!-- </div> -->
+
         <div class="line">
             <div class="x6 x3-move">
-                <input type="text" class="input" placeholder="模糊搜索新闻标题" id="key"/>
+                <input type="text" class="input" style="width: 95%" placeholder="模糊搜索新闻标题" id="key"/>
             </div>
-            <div class="x1 x0-move">
-                <!--            <a class="button border-yellow radius-rounded fadein-right" ><span class="icon-refresh "></span> 刷新</a>-->
+            <div class="x1 x0-move" style="margin-left: 10px">
                 <button class="button border-blue fadein-right" onclick="ajup()"><span class="icon-search"></span> 搜索
                 </button>
-
             </div>
         </div>
         <br>
         <div id="answer">
-            <h2 align="center" style="padding: 20px">请输入关键字</h2>
+            <h2 align="center" style="padding: 200px;color: #CCCCCC">请输入关键字</h2>
         </div>
         <br><br>
 
@@ -123,9 +120,6 @@
 
 
     <footer class="footer">
-        <div class="container">
-            <p>Copyright &copy; 2018.Kang Yi Corporation.</p>
-        </div>
         <div id="gotop"><a class="gotop"></a></div>
     </footer>
 

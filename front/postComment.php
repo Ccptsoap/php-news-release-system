@@ -7,7 +7,7 @@
     $uname = $_GET['uname'];
 
 
-    $mysqli = new mysqli('localhost', 'root', '', 'news');
+    $mysqli = new mysqli('localhost', 'root', '888888', 'news');
     $mysqli->set_charset('utf8');
     if ($mysqli->connect_errno) {
         die('<h2 style="color: red">连接错误</h2>' . $mysqli->connect_error);
@@ -15,7 +15,7 @@
 
     $sql = "INSERT comment(ctext,ctime,cuser,nid) VALUES('{$ctext}',NOW(),'{$uname}',{$nid})";
     if ($mysqli->query($sql)) {
-        echo '<script> alert("成功发表评论"); window.location.href="show.php?id="+' . $nid . ';</script>';
+        echo '<script> alert("成功发表评论"); window.location.href="showNews.php?id="+' . $nid . ';</script>';
 
 //    echo '成功添加了'.$mysqli->affected_rows.'条记录，新增的主键id是：'.$mysqli->insert_id;
     } else {

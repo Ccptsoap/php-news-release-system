@@ -37,11 +37,9 @@
 
 <body style="background-color:#f2f9fd;">
 
-    <!--表头-->
     <div class="header bg-main">
         <div class="logo margin-big-left fadein-top">
-            <h1><img src="images/h2.png" class="radius-circle rotate-hover" height="50" alt="" id="flush_head"/>后台管理中心
-            </h1>
+            <h1 style="color: black">后台管理中心</h1>
         </div>
         <div class="head-l">
             <a class="button button-little bg-green" href="../front/index.php" onclick="Logout()"><span
@@ -56,15 +54,14 @@
         <div class="leftnav-title">
             <strong><span class="icon-list"></span>菜单列表</strong>
         </div>
-        <h2><span class="icon-user"></span>基本设置</h2>
+        <h2><span class="icon-user"></span>首页</h2>
         <ul style="display:block">
 
-            <li><a href="page.html?1" target="right"><span class="icon-caret-right"></span>发布新闻</a></li>
-            <li><a href="cate.html" target="right"><span class="icon-caret-right"></span>用户管理</a></li>
+            <li><a href="newsCreate.html?1" target="right"><span class="icon-caret-right"></span>发布新闻</a></li>
+            <li><a href="userOperate.html" target="right"><span class="icon-caret-right"></span>用户管理</a></li>
             <li><a href="book.html" target="right"><span class="icon-caret-right"></span>新闻管理</a></li>
             <li><a href="recycle.html" target="right"><span class="icon-caret-right"></span>新闻回收站</a></li>
 
-<!--            <li><a href="column.html" target="right"><span class="icon-caret-right"></span>栏目管理</a></li>-->
         </ul>
 
     </div>
@@ -86,8 +83,7 @@
         <li><a href="##" id="a_leader_txt">发布新闻</a></li>
     </ul>
     <div class="admin">
-        <!--    通过给url+?1 可以刷新缓存-->
-        <iframe scrolling="auto" rameborder="0" src="page.html?1" name="right" width="100%" height="100%"></iframe>
+        <iframe scrolling="auto" rameborder="0" src="newsCreate.html?1" name="right" width="100%" height="100%"></iframe>
     </div>
 
 

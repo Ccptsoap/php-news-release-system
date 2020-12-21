@@ -44,7 +44,8 @@
 
 
 </head>
-<body class="user-select single" style="background:url('images/bg.jpg');
+<!--<body class="user-select single" style="background:url('images/bg.jpg');-->
+<body class="user-select single" style="background-color: #888888;
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-size:cover;
@@ -56,7 +57,7 @@
         <nav class="navbar navbar-default" id="navbar">
             <div class="container">
                 <div class="navbar-header">
-                    <h1 class="logo hvr-bounce-in"><a href="index.php"><img src="images/nav_head.png"/></a></h1>
+                    <h1 class="logo hvr-bounce-in"><a href="index.php"><strong>昨日头条</strong></a></h1>
                 </div>
                 <div class="collapse navbar-collapse" id="header-navbar">
                     <form class="navbar-form visible-xs" action="/Search" method="post">
@@ -75,7 +76,7 @@
                             session_start();
                             if (!isset($_SESSION['fname'])) {
                                 ?>
-                                <li><a data-cont="用户登陆" title="用户登陆" href="../home/login.html"><span
+                                <li><a data-cont="用户登陆" title="用户登陆" href="../user/login.html"><span
                                                 class="icon-user"></span> 用户登陆</a></li>
                                 <?php
                             } else { ?>
@@ -114,7 +115,10 @@
                         //指针复位
                         $mysqli_result->data_seek(0);
                         $row = $mysqli_result->fetch_assoc();
+
+                        echo '<script>document.title = "' . $row['title'] . '";</script>'; //设置文章标题
                         echo "<header class=\"article-header\">
+
             <h1 class=\"article-title\">
                 {$row['title']}
             </h1>
@@ -124,11 +128,12 @@
                 点击量：{$row['click']}
             </div>
         </header>
-    
+        <img src='/news/newsCoverImg/{$row['imageName']}' style='display:block; margin:50px auto'/>
         <article class=\"article-content\">
+        
             <p>";
 
-                        $text_arr = explode(chr(10), $row['content']);
+                        $text_arr = explode(chr(10), $row['content']); //根据换行符输出段落
 
                         for ($i = 0; $i < count($text_arr); $i++) {
                             echo $text_arr[$i];
@@ -145,7 +150,7 @@
     ";
 
                     } else {
-                        echo '么有你想要的东西';
+                        echo '<h1 class=\"article-title\" style="text-align: center;padding-top: 50px;padding-bottom: 50px">没有找到该文章！</h1>';
                     }
 
                     //更新阅读量
@@ -157,27 +162,6 @@
 
                 ?>
 
-                <!--  模版  -->
-
-                <!--	<header class="article-header">-->
-                <!--		<h1 class="article-title">-->
-                <!--			{$row['title']}-->
-                <!--        </h1>-->
-                <!--		<div class="article-meta">-->
-                <!--            {$row['cre_date']} &nbsp;&nbsp;-->
-                <!--            {$row['category']} &nbsp;&nbsp;-->
-                <!--            {$row['click']}-->
-                <!--		</div>-->
-                <!--	</header>-->
-                <!---->
-                <!--	<article class="article-content">-->
-                <!--		<p>{$row['content']}</p>-->
-                <!--	</article>-->
-                <!--    -->
-                <!--  <div class="article-tags">-->
-                <!--	  分类：{$row['category']}-->
-                <!--  </div>-->
-
                 <hr>
                 <br>
 
@@ -185,22 +169,19 @@
 
                     if (!isset($_SESSION['fname'])) {
                         ?>
-                        <h2>登陆之后才可以评论</h2>
+                        <p style="margin-top: 5px;margin-bottom: 50px; font-size: 14px;">登陆之后才可以评论</p>
                         <br><br>
                         <?php
                     } else { ?>
                         <form action="postComment.php" type="get">
                             <input type="hidden" name="nid" value="<?php echo "{$_GET['id']}"; ?>">
                             <input type="hidden" name="uname" value="<?php echo "{$_SESSION['fname']}"; ?>">
-                            <!--            <textarea name="ctext" id="" cols="30" rows="10" placeholder="您的评论或留言"></textarea>-->
-                            <!--            <input type="submit">-->
 
                             <div id="respond">
                                 <div class="comment">
                                     <div class="comment-box">
                                         <textarea placeholder="您的评论或留言" name="ctext" id="comment-textarea" cols="100%"
                                                   rows="3" tabindex="3" id="txtcom"></textarea>
-                                        <!--                        <input type="submit" onclick="diy()" >-->
                                         <div class="comment-ctrl">
                                             <button type="submit" id="comment-submit" tabindex="4">评论</button>
                                         </div>
@@ -213,26 +194,20 @@
                         <?php
                     }
                 ?>
+                <div style="text-align:center">
+                    <button class="button border-green icon-chevron-circle-down"
+                            style="width: 400px; padding-top: 5px;padding-bottom: 5px;margin-top: 20px;" onclick="comlist()"> 点击加载评论
+                    </button>
+                </div>
 
-                <button class="button border-green icon-chevron-circle-down" onclick="comlist()"> 点击查看评论</button>
                 <br><br>
-                <div id="txtHint_com"><h2 align="center" style="padding: 20px">点击查看评论</h2></div>
-
-                <!--    <div id="postcomments">-->
-                <!--        <ol id="comment_list" class="commentlist">-->
-                <!--            <li class="comment-content"><div class="comment-main"><p><b>{$row['cauthor']}</b><span class="time">({$row['ctime']})</span><br>{$row['ctext']}</p></div></li>-->
-                <!--            <li class="comment-content"><div class="comment-main"><p><b>木庄网络博客</b><span class="time">(2016/10/28 11:41:03)</span><br>不错的网站主题，看着相当舒服</p></div></li>-->
-                <!--        </ol>-->
-                <!--    </div>-->
+                <div id="txtHint_com"><h2 align="center" style="padding: 20px"></h2></div>
 
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
-            <p>Copyright &copy; 2018.Kang Yi Corporation.</p>
-        </div>
         <div id="gotop"><a class="gotop"></a></div>
     </footer>
 

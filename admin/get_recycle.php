@@ -1,8 +1,6 @@
 <?php
 
-
     require "mysqli_connect.php";
-
 
     $sql = "SELECT news_id,title,cre_date FROM recycle ORDER BY  cre_date DESC";
 //执行查询，返回结果集对象

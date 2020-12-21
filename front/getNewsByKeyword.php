@@ -1,19 +1,13 @@
 <?php
-    //获取指定类型的新闻
-
     header("Content-Type: text/html; charset=utf-8");
-
     $mysqli = new mysqli('127.0.0.1', 'root', '888888', 'news');
     $mysqli->set_charset('utf8');
-
     if ($mysqli->connect_errno) {
         die('<h2 style="color: red">连接错误</h2>' . $mysqli->connect_error);
     }
 
-    $cate = $_GET['cate'];
 
-    $sql = "SELECT * FROM news WHERE category='" . $cate . "' LIMIT 8";
-
+    $sql = "SELECT * FROM news WHERE title like '%" . $_GET['key'] . "%'ORDER BY cre_date DESC";
 //执行查询，返回结果集对象
     $mysqli_result = $mysqli->query($sql);
 //如果结果集存在并且有数据
@@ -33,7 +27,7 @@ EOT;
             //输出图片
             echo '
                 <a class="picture" href="showNews.php?id=' . $row['news_id'] . '" target="_blank">
-                <img class="Monograph" src="/news/newsCoverImg/' . $row['imageName'] . '">
+                <img class="Monograph" src="images/newPicTest.jpg">
                 </a>
                 ';
 
@@ -73,8 +67,32 @@ EOT;
 EOT;
         /****前端渲染****/
 
+
+////table head
+//        echo "<table class=\"table text-center table-striped\"> <tr>
+//      <th width=\"5%\">新闻编号</th>
+//      <th width=\"15%\">新闻名称</th>
+//      <th width=\"10%\">发布时间</th>
+//      <th width=\"10%\">访问</th>
+//    </tr>";
+//        while ($row = $mysqli_result->fetch_assoc()) {
+//            echo '<tr>';
+//            echo '<td>' . $row['news_id'] . '</td><td>' . $row['title'] . '</td><td>' . $row['cre_date'] . '</td>';
+//            echo '<td>
+//        <div class="button-group">
+//          <a class="button border-main" href="javascript:void(0)" onclick="';
+//
+//            echo "turn({$row['news_id']})";
+//
+//            echo '"><span class="icon-link"></span> 链接</a>
+//        </div>
+//      </td>';
+//            echo '</tr>';
+//        }
+//        echo "</table>";
+
     } else {
-        echo '<h2  align="center" style="padding: 200px; color: #CCCCCC">数据库中没有数据</h2>';
+        echo '<h2 align="center" style="padding: 20px">没有相关内容哦</h2>';
     }
     $mysqli->close();
 

@@ -26,8 +26,7 @@
             $_SESSION['uname'] = $_POST['username'];
             $_SESSION['pwd'] = $_POST['password'];
             $_SESSION['pwd2'] = '1123123';
-            echo "<script>alert('欢迎您，管理员');
-        window.location.href=\"index.php\"</script>";
+            echo "<script>window.location.href=\"index.php\"</script>";
         } else {
             echo "<script>alert('账户或者密码错误！重新填写');
         window.location.href=\"login.html\";</script>";

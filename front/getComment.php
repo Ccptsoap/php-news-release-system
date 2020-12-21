@@ -33,7 +33,7 @@
     </div>";
 
     } else {
-        echo '<h2 align="center" style="padding: 20px">还没有评论哦，快抢沙发吧</h2>';
+        echo '<p align="center" style="padding: 20px;margin-top: 50px;margin-bottom: 100px;color: #888888">还没有评论哦，快抢沙发吧</p>';
     }
     $mysqli->close();
 
