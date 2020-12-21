@@ -45,7 +45,7 @@
 
 </head>
 <!--<body class="user-select single" style="background:url('images/bg.jpg');-->
-<body class="user-select single" style="background-color: #888888;
+<body class="user-select single" style="background-color: #root;
     background-attachment:fixed;
     background-repeat:no-repeat;
     background-size:cover;
@@ -102,7 +102,7 @@
                 <?php
                     $news_id = $_GET['id'];
 
-                    $mysqli = new mysqli('127.0.0.1', 'root', '888888', 'news');
+                    $mysqli = new mysqli('127.0.0.1', 'root', 'root', 'news');
                     $mysqli->set_charset('utf8');
                     if ($mysqli->connect_errno) {
                         die('<h2 style="color : red">连接错误</h2>' . $mysqli->connect_error);
@@ -128,7 +128,7 @@
                 点击量：{$row['click']}
             </div>
         </header>
-        <img src='/news/newsCoverImg/{$row['imageName']}' style='display:block; margin:50px auto'/>
+        <img src='/php-news-release-system/newsCoverImg/{$row['imageName']}' style='display:block; margin:50px auto'/>
         <article class=\"article-content\">
         
             <p>";

@@ -3,7 +3,7 @@
     session_start();
 
 // 连接mysql数据库
-    $mysqli = new mysqli('127.0.0.1', 'root', '888888', 'news');
+    $mysqli = new mysqli('127.0.0.1', 'root', 'root', 'news');
 
     if ($mysqli->connect_errno) {
         die('<h2 style="color: red">连接错误</h2>' . $mysqli->connect_error);

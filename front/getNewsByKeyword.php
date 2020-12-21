@@ -1,6 +1,6 @@
 <?php
     header("Content-Type: text/html; charset=utf-8");
-    $mysqli = new mysqli('127.0.0.1', 'root', '888888', 'news');
+    $mysqli = new mysqli('127.0.0.1', 'root', 'root', 'news');
     $mysqli->set_charset('utf8');
     if ($mysqli->connect_errno) {
         die('<h2 style="color: red">连接错误</h2>' . $mysqli->connect_error);
@@ -27,7 +27,7 @@ EOT;
             //输出图片
             echo '
                 <a class="picture" href="showNews.php?id=' . $row['news_id'] . '" target="_blank">
-                <img class="Monograph" src="images/newPicTest.jpg">
+                <img class="Monograph" src="/php-news-release-system/newsCoverImg/' . $row['imageName'] . '">
                 </a>
                 ';
 

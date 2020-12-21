@@ -3,7 +3,7 @@
 
     header("Content-Type: text/html; charset=utf-8");
 
-    $mysqli = new mysqli('127.0.0.1', 'root', '888888', 'news');
+    $mysqli = new mysqli('127.0.0.1', 'root', 'root', 'news');
     $mysqli->set_charset('utf8');
 
     if ($mysqli->connect_errno) {

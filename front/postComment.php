@@ -7,7 +7,7 @@
     $uname = $_GET['uname'];
 
 
-    $mysqli = new mysqli('localhost', 'root', '888888', 'news');
+    $mysqli = new mysqli('localhost', 'root', 'root', 'news');
     $mysqli->set_charset('utf8');
     if ($mysqli->connect_errno) {
         die('<h2 style="color: red">连接错误</h2>' . $mysqli->connect_error);

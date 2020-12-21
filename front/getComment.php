@@ -3,7 +3,7 @@
     //获取评论
     header("Content-Type: text/html; charset=utf-8");
 
-    $mysqli = new mysqli('127.0.0.1', 'root', '888888', 'news');
+    $mysqli = new mysqli('127.0.0.1', 'root', 'root', 'news');
 
 
     $mysqli->set_charset('utf8');
@@ -33,7 +33,7 @@
     </div>";
 
     } else {
-        echo '<p align="center" style="padding: 20px;margin-top: 50px;margin-bottom: 100px;color: #888888">还没有评论哦，快抢沙发吧</p>';
+        echo '<p align="center" style="padding: 20px;margin-top: 50px;margin-bottom: 100px;color: #root">还没有评论哦，快抢沙发吧</p>';
     }
     $mysqli->close();
 
